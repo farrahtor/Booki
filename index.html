@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booki</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Raleway#standard-styles"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Bloc page-->
+    <div id="bloc-page">
+      <!--Header-->
+      <header id="header">
+        <!--Logo-->
+        <div id="logo">
+          <img
+            src="images/logo/Booki@3x.png"
+            alt="Logo Booki"
+            width="100px"
+            height="50px"
+          />
+        </div>
+
+        <!--Menu de navigation-->
+        <nav id="menu">
+          <ul>
+            <li><a href="#heberg-marseille">Hébergements</a></li>
+            <li><a href="#activ-marseille">Activités</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Section recherche -->
+      <section id="banniere-search">
+        <!--Titre-->
+        <header class="titre">
+          <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </header>
+        <!-- Barre de recherche -->
+        <form class="search">
+          <i class="fa-solid fa-location-dot"></i>
+          <input type="search" placeholder="Marseille, France" class="search" />
+          <input type="submit" value="Rechercher" />
+        </form>
+
+        <!-- Filtres -->
+        <div id="filtres">
+          <h2>Filtres</h2>
+          <div class="filtres">
+            <a href="#" class="button"
+              ><i class="fa-solid fa-money-bill-wave"></i>Économique</a
+            >
+          </div>
+          <div class="filtres">
+            <a href="#" class="button"
+              ><i class="fa-solid fa-child-reaching"></i>Familial</a
+            >
+          </div>
+          <div class="filtres">
+            <a href="#" class="button"
+              ><i class="fa-solid fa-heart"></i>Romantique</a
+            >
+          </div>
+          <div class="filtres">
+            <a href="#" class="button"
+              ><i class="fa-solid fa-dog"></i>Animaux autorisés</a
+            >
+          </div>
+        </div>
+        <!-- Info Footer -->
+        <footer>
+          <i class="fa-solid fa-info"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </footer>
+      </section>
+
+      <!-- Contenue page -->
+      <main>
+        <!-- Hebergements -->
+        <section id="container">
+          <article id="heberg-marseille">
+            <header>
+              <h2>Hébergements à Marseille</h2>
+            </header>
+            <div id="hebergements">
+              <div class="chambres">
+                <a href="#">
+                  <img
+                    src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                    alt=""
+                  />
+                  <h3>Auberge La Cannebière</h3>
+                  <p>Nuit à partir de 25<span class="euro">€</span></p>
+                  <ul class="etoiles">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+            <footer>
+              <a href="#">Afficher plus</a>
+            </footer>
+          </article>
+          <aside id="populaires">
+            <h2>Les plus populaires</h2>
+          </aside>
+        </section>
+        <!-- Activitees -->
+        <section id="activ-marseille"></section>
+      </main>
+    </div>
+  </body>
+</html>
