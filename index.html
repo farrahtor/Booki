@@ -90,40 +90,148 @@
       <!-- Contenue page -->
       <main>
         <!-- Hebergements -->
-        <section id="container">
-          <article id="heberg-marseille">
+        <section id="heberg-marseille">
+          <!-- Heberg + populaire -->
+          <div id="hebergements">
             <header>
               <h2>Hébergements à Marseille</h2>
             </header>
-            <div id="hebergements">
-              <div class="chambres">
+            <div id="heberg-liste">
+              <article class="heberg-carte">
                 <a href="#">
                   <img
                     src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                    alt=""
+                    alt="Cannebière"
                   />
-                  <h3>Auberge La Cannebière</h3>
-                  <p>Nuit à partir de 25<span class="euro">€</span></p>
-                  <ul class="etoiles">
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                    <li><i class="fa-solid fa-star"></i></li>
-                  </ul>
+                  <div class="heberg-carte-text">
+                    <h3>Auberge La Cannebière</h3>
+                    <p>Nuit à partir de <strong>25€</strong></p>
+                    <p class="etoiles">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star gris"></i>
+                    </p>
+                  </div>
                 </a>
-              </div>
+              </article>
+              <article class="heberg-carte">
+                <a href="#">
+                  <img
+                    src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                    alt="Port"
+                  />
+                  <div class="heberg-carte-text">
+                    <h3>Hôtel du port</h3>
+                    <p>Nuit à partir de <strong>52€</strong></p>
+                    <p class="etoiles">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="heberg-carte">
+                <a href="#">
+                  <img
+                    src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                    alt="Les mouettes"
+                  />
+                  <div class="heberg-carte-text">
+                    <h3>Hôtel les mouettes</h3>
+                    <p>Nuit à partir de <strong>76€</strong></p>
+                    <p class="etoiles">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star gris"></i>
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="heberg-carte">
+                <a href="#">
+                  <img
+                    src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                    alt="mer"
+                  />
+                  <div class="heberg-carte-text">
+                    <h3>Hôtel de la mer</h3>
+                    <p>Nuit à partir de <strong>46€</strong></p>
+                    <p class="etoiles">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star gris"></i>
+                      <i class="fa-solid fa-star gris"></i>
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="heberg-carte">
+                <a href="#">
+                  <img
+                    src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                    alt="Le panier"
+                  />
+                  <div class="heberg-carte-text">
+                    <h3>Auberge Le panier</h3>
+                    <p>Nuit à partir de <strong>23€</strong></p>
+                    <p class="etoiles">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star gris"></i>
+                    </p>
+                  </div>
+                </a>
+              </article>
+              <article class="heberg-carte">
+                <a href="#">
+                  <img
+                    src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                    alt="Amina"
+                  />
+                  <div class="heberg-carte-text">
+                    <h3>Hotel chez Amina</h3>
+                    <p>Nuit à partir de 25<strong>€</strong></p>
+                    <p class="etoiles">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                </a>
+              </article>
             </div>
             <footer>
               <a href="#">Afficher plus</a>
             </footer>
-          </article>
+          </div>
           <aside id="populaires">
-            <h2>Les plus populaires</h2>
+            <header>
+              <h2>Les plus populaires</h2>
+              <i class="fa-solid fa-star"></i>
+            </header>
+            <div id="popul-liste">
+              <article class="popul-liste"></article>
+            </div>
           </aside>
         </section>
         <!-- Activitees -->
-        <section id="activ-marseille"></section>
+        <section id="activ-marseille">
+          <header>
+            <h2>Activités à Marseille</h2>
+          </header>
+        </section>
       </main>
     </div>
   </body>

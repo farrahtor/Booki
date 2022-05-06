@@ -6,7 +6,7 @@
   padding: 0;
 }
 body {
-  width: 90%;
+  width: 94%;
   margin: auto;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -18,6 +18,10 @@ a {
 }
 ul li {
   list-style-type: none;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 800;
 }
 
 /*Bloc page*/
@@ -32,6 +36,10 @@ ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+/* Logo */
+#logo {
+  padding: 20px 0;
 }
 
 /* Menue de navigation */
@@ -50,11 +58,11 @@ ul li {
 }
 
 /* Banniere recherche */
-
-.titre h1 {
+#banniere-search {
+  padding: 15px 0 10px 0;
+}
+#banniere-search header p {
   padding: 8px 0;
-  font-size: 22px;
-  font-weight: bold;
 }
 /* Barre de recherche */
 form {
@@ -63,7 +71,7 @@ form {
   margin: 10px;
   width: 400px;
   height: 50px;
-  margin: 25px 0;
+  margin: 15px 0;
 }
 form i {
   width: 50px;
@@ -78,7 +86,7 @@ form input[type="search"] {
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  border: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 form input::placeholder {
   color: #000000;
@@ -102,7 +110,7 @@ form input[type="submit"] {
   flex-wrap: wrap;
   gap: 40px;
   font-size: 17px;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   font-weight: 800;
   margin: 30px 0;
 }
@@ -142,7 +150,7 @@ form input[type="submit"] {
 #banniere-search footer {
   display: flex;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 #banniere-search footer i {
   display: flex;
@@ -160,29 +168,96 @@ form input[type="submit"] {
 
 /* Main */
 /* Hebergements */
-#container {
-  display: flex;
-  justify-content: space-between;
+main {
   width: 100%;
-
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-#heberg-marseille,
+
+#heberg-marseille {
+  display: flex;
+  flex-direction: row;
+
+  gap: 40px;
+}
+
+#hebergements,
 #populaires {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  gap: 25px;
   background-color: #ececec;
+  padding: 30px;
   border-radius: 20px;
-  flex: 2;
 }
-#heberg-marseille {
-  flex: 3;
+#hebergements {
+  flex: 4;
 }
 
-#populaires {
-  flex: 1.2;
-  /* background-color: #ececec;
+#heberg-liste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.heberg-carte {
+  width: 250px;
+  height: 192px;
+  background-color: #fff;
+  border: 5px solid #ffffff;
   border-radius: 20px;
-  padding: 30px 0 30px 0; */
+  box-shadow: 0 0 15px #1b1b1b21;
+}
+.heberg-carte a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heberg-carte:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.heberg-carte-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px 10px;
+}
+.heberg-carte-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.heberg-carte-text p {
+  font-size: 14px;
+}
+.heberg-carte img {
+  height: 110px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.etoiles {
+  color: #0065fc;
+}
+.etoiles i {
+  font-size: 12px;
+  margin: -1.5px;
+}
+.gris {
+  color: #d5d2d2;
+}
+#hebergements footer a {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+/*populaire*/
+#populaires {
+  flex: 1.5;
+}
+#populaires header {
+  display: flex;
+  justify-content: space-evenly;
 }
