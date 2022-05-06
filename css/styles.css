@@ -179,7 +179,6 @@ main {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  height: 630px;
 }
 
 #hebergements,
@@ -188,7 +187,7 @@ main {
   flex-direction: column;
   gap: 25px;
   background-color: #ececec;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   border-radius: 20px;
 }
 #hebergements {
@@ -209,6 +208,7 @@ main {
   border: 5px solid #ffffff;
   border-radius: 20px;
   box-shadow: 0 0 15px #1b1b1b21;
+  flex-grow: 1;
 }
 .heberg-carte a {
   display: flex;
@@ -301,4 +301,9 @@ main {
 }
 .popul-carte-text .etoiles {
   padding-top: 30px;
+}
+
+/* Activité */
+#activ-marseille header h2 {
+  padding: 20px 0 20px;
 }
