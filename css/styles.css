@@ -178,8 +178,8 @@ main {
 #heberg-marseille {
   display: flex;
   flex-direction: row;
-
   gap: 40px;
+  height: 630px;
 }
 
 #hebergements,
@@ -188,7 +188,7 @@ main {
   flex-direction: column;
   gap: 25px;
   background-color: #ececec;
-  padding: 30px;
+  padding: 40px;
   border-radius: 20px;
 }
 #hebergements {
@@ -203,7 +203,7 @@ main {
   gap: 30px;
 }
 .heberg-carte {
-  width: 250px;
+  width: 245px;
   height: 192px;
   background-color: #fff;
   border: 5px solid #ffffff;
@@ -250,14 +250,55 @@ main {
 #hebergements footer a {
   font-size: 18px;
   font-weight: 700;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 /*populaire*/
 #populaires {
-  flex: 1.5;
+  flex: 1.7;
 }
 #populaires header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+#populaires header i {
+  font-size: 22px;
+}
+#popul-carte {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.popul-carte {
+  width: 350px;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 15px #1b1b1b21;
+}
+.popul-carte a {
+  display: flex;
+  flex-direction: row;
+}
+.popul-carte img {
+  width: 125px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+.popul-carte-text {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.popul-carte-text h3 {
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.popul-carte-text p {
+  font-size: 14px;
+}
+.popul-carte-text .etoiles {
+  padding-top: 30px;
 }
