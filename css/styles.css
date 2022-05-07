@@ -345,7 +345,8 @@ main {
   transition: 0.3s;
 }
 .activ-carte img {
-  width: 350px;
+  /* width: 350px; */
+  width: 100%;
   object-fit: cover;
   height: min-content;
   border-radius: 15px 15px 0 0;
