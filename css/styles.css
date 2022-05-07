@@ -26,7 +26,7 @@ h1 {
 
 /*Bloc page*/
 #bloc-page {
-  width: 95%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -347,4 +347,16 @@ main {
 #footer-page {
   width: 100%;
   background-color: #ececec;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 400px 40px 85px;
+}
+#footer-page h4 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+#footer-page a {
+  font-size: 16px;
+  font-weight: 800px;
+  padding: 5px 0;
 }
