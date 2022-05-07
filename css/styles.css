@@ -6,7 +6,7 @@
   padding: 0;
 }
 body {
-  width: 94%;
+  width: 100%%;
   margin: auto;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
@@ -26,6 +26,8 @@ h1 {
 
 /*Bloc page*/
 #bloc-page {
+  width: 95%;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -339,4 +341,10 @@ main {
 .carte2 {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* Footer page */
+#footer-page {
+  width: 100%;
+  background-color: #ececec;
 }
