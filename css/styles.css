@@ -307,3 +307,36 @@ main {
 #activ-marseille header h2 {
   padding: 20px 0 20px;
 }
+#activ-cartes {
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+.activ-carte {
+  height: 360px;
+}
+.activ-carte a {
+  border-radius: 20px;
+  box-shadow: 0 0 15px #1b1b1b21;
+  /* width: 300px; */
+}
+.activ-carte img {
+  width: 350px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.activ-carte h3 {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.carte1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carte2 {
+  display: flex;
+  flex-wrap: wrap;
+}
