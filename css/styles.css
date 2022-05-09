@@ -6,8 +6,7 @@
   padding: 0;
 }
 body {
-  width: 100%%;
-  margin: auto;
+  width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
 }
@@ -19,61 +18,69 @@ a {
 ul li {
   list-style-type: none;
 }
-h1 {
-  font-size: 22px;
+h1,
+h2 {
+  font-size: 18px;
   font-weight: 800;
 }
 
-/*Bloc page*/
-#bloc-page {
-  width: 90%;
-  margin: auto;
+/* Container */
+#container {
   display: flex;
   flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
 }
 /* Header */
 #header {
-  width: 95%;
+  width: 96%;
+  margin: auto;
   height: 100px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 /* Logo */
-#logo {
-  padding: 20px 0;
+#logo img {
+  height: 50px;
+  margin-top: 15px;
 }
-
 /* Menue de navigation */
 #menu ul {
   display: flex;
   justify-content: space-between;
 }
 #menu a {
+  font-size: 15px;
   padding: 40px 30px;
-  height: 100px;
-  font-size: 16px;
 }
 #menu a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
 
-/* Banniere recherche */
-#banniere-search {
-  padding: 15px 0 10px 0;
+/* Main */
+#main {
+  width: 96%;
+  margin: 0 auto 5%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-#banniere-search header p {
-  padding: 8px 0;
+
+/* Section Recherche */
+#titre p {
+  padding-top: 8px;
 }
 /* Barre de recherche */
-form {
+#search {
   display: flex;
   flex-direction: row;
-  margin: 10px;
   width: 400px;
   height: 50px;
-  margin: 15px 0;
+  margin: 20px 0;
 }
 form i {
   width: 50px;
@@ -110,16 +117,16 @@ form input[type="submit"] {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+
+  gap: 30px;
   font-size: 17px;
-  /* letter-spacing: 0.5px; */
   font-weight: 800;
   margin: 30px 0;
 }
-#filtres h2 {
-  font-size: 20px;
-}
 #filtres a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 110%;
   padding-right: 20px;
@@ -127,138 +134,126 @@ form input[type="submit"] {
   border-radius: 40px;
 }
 
-.filtres i {
+#filtres i {
   width: 50px;
   height: 50px;
-  text-align: center;
   font-size: 20px;
   color: #0065fc;
   padding: 15px;
   margin: -3px;
   background-color: #deebff;
   border-radius: 50%;
-}
-#filtres a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  text-align: center;
 }
 #filtres a:hover {
   background-color: #deebff;
   transform: scale(1.02);
   transition: 0.05s;
 }
-/* Footer banniere recherche */
-#banniere-search footer {
+/* Footer recherche */
+#sec-search footer {
   display: flex;
   align-items: center;
-  padding-bottom: 30px;
 }
-#banniere-search footer i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#sec-search footer i {
   width: 25px;
   height: 25px;
+  font-size: 12px;
   margin-right: 10px;
+  padding: 4px;
   text-align: center;
   color: #0065fc;
   border: 2px solid #ececec;
   border-radius: 50%;
-  font-size: 12px;
 }
 
-/* Main */
-/* Hebergements */
-main {
-  width: 100%;
+/* Section hebergements */
+#sec-hebergements {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
+  gap: 25px;
 }
-
-#heberg-marseille {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
 #hebergements,
 #populaires {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   background-color: #ececec;
-  padding: 40px 40px 0 40px;
+  padding: 20px;
   border-radius: 20px;
 }
 #hebergements {
   flex: 4;
 }
+#populaires {
+  flex: 1.8;
+}
 
+/* Hebergements listes*/
 #heberg-liste {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 15px;
 }
 .heberg-carte {
-  width: 245px;
-  height: 192px;
+  flex-basis: 31%;
+  height: 140px;
   background-color: #fff;
   border: 5px solid #ffffff;
   border-radius: 20px;
   box-shadow: 0 0 15px #1b1b1b21;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 .heberg-carte a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 .heberg-carte:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
+.heberg-carte-picture {
+  height: 58%;
+}
+.heberg-carte-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 .heberg-carte-text {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 8px 10px;
+  gap: 4px;
+  padding: 0 0 1% 4%;
 }
 .heberg-carte-text h3 {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 800;
 }
 .heberg-carte-text p {
-  font-size: 14px;
-}
-.heberg-carte img {
-  height: 110px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
+  font-size: 10px;
 }
 .etoiles {
   color: #0065fc;
 }
 .etoiles i {
-  font-size: 12px;
+  font-size: 9px;
   margin: -1.5px;
 }
 .gris {
   color: #d5d2d2;
 }
 #hebergements footer a {
-  font-size: 18px;
-  font-weight: 700;
-  padding: 20px 0;
+  font-size: 12px;
+  font-weight: 750;
+  padding-top: 3%;
 }
 
 /*populaire*/
-#populaires {
-  flex: 1.7;
-}
 #populaires header {
   display: flex;
   justify-content: space-between;
@@ -269,11 +264,10 @@ main {
 #popul-carte {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 20px;
 }
 .popul-carte {
-  width: 350px;
-  height: 140px;
+  height: 110px;
   background-color: #fff;
   border-radius: 20px;
   border: 5px solid #ffffff;
@@ -281,92 +275,91 @@ main {
 }
 .popul-carte a {
   display: flex;
-  flex-direction: row;
+  height: 100%;
 }
 .popul-carte:hover {
   transform: scale(1.05);
   transition: 0.3s;
 }
-.popul-carte img {
-  width: 125px;
-  height: 130px;
+.popul-carte-picture {
+  width: 40%;
+}
+.popul-carte-picture img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 15px 0 0 15px;
 }
 .popul-carte-text {
-  padding: 15px 20px;
   display: flex;
   flex-direction: column;
-}
-.popul-carte-text h3 {
-  font-size: 16px;
-  padding-bottom: 8px;
-}
-.popul-carte-text p {
-  font-size: 14px;
-}
-.popul-carte-text .etoiles {
-  padding-top: 30px;
+  justify-content: space-between;
+  width: 60%;
+  padding: 3% 6%;
 }
 
-/* Activité */
-#activ-marseille {
+.popul-carte-text h3 {
+  font-size: 12px;
+  font-weight: 800;
+  padding-bottom: 2%;
+}
+.popul-carte-text p {
+  font-size: 10px;
+}
+
+/* /Activites/ */
+#sec-activites {
   width: 100%;
-  height: 620px;
+  height: 370px;
 }
 #activ-cartes {
-  width: 100%;
+  height: 350px;
   display: flex;
+  flex-flow: column wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px 0;
+  align-content: space-between;
+  padding-top: 20px;
 }
 .activ-carte {
-  width: 300px;
-  height: min-content;
-}
-.carte-par-deux {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 513px;
+  width: 206px;
 }
 .activ-carte a {
-  display: flex;
-  flex-direction: column;
-  height: min-content;
+  height: 100%;
+  border-radius: 20px;
   background-color: #fff;
-  border-radius: 15px;
   box-shadow: 0 0 15px #1b1b1b21;
 }
-.activ-carte a:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-}
 .activ-carte img {
-  /* width: 350px; */
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  height: min-content;
-  border-radius: 15px 15px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+.activ-carte-picture {
+  height: 100%;
 }
 .activ-carte h3 {
-  font-size: 16px;
-  padding: 15px;
+  width: 206px;
+  height: 30px;
+  font-size: 12px;
   font-weight: 800;
+  padding: 5%;
 }
-.carte-long img {
-  height: 460px;
+.carte1,
+.carte4 {
+  height: 100%;
 }
-.carte-deux-tiers img {
-  height: 220px;
+
+.carte2 {
+  height: 58%;
 }
-.carte-un-tiers img {
-  height: 140px;
+
+.carte3 {
+  height: 25%;
 }
-.carte-moitie img {
-  height: 180px;
+.carte5,
+.carte6 {
+  height: 40%;
 }
 
 /* Footer page */
@@ -374,15 +367,18 @@ main {
   width: 100%;
   background-color: #ececec;
   display: flex;
-  justify-content: space-between;
-  padding: 60px 400px 40px 85px;
+  justify-content: flex-start;
+}
+#footer-page section {
+  margin: 4% 14% 4% 2%;
 }
 #footer-page h4 {
-  font-size: 20px;
-  padding-bottom: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  padding-bottom: 6%;
 }
 #footer-page a {
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 800px;
-  padding: 5px 0;
+  padding: 2% 0;
 }
