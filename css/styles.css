@@ -32,12 +32,13 @@ input {
 #container {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
   gap: 20px;
 }
+
+/* ///////////////////////////////////////////////////////////////////// */
 /* Header */
 #header {
-  width: 96%;
+  width: 93%;
   margin: auto;
   height: 100px;
 
@@ -56,7 +57,7 @@ input {
   justify-content: space-between;
 }
 #menu a {
-  font-size: 15px;
+  font-size: 16px;
   padding: 40px 30px;
 }
 #menu li:hover {
@@ -64,9 +65,10 @@ input {
   border-top: 2px solid #0065fc;
 }
 
+/* ////////////////////////////////////////////////////////////////// */
 /* Main */
 #main {
-  width: 96%;
+  width: 93%;
   margin: 0 auto 2%;
 
   display: flex;
@@ -76,40 +78,41 @@ input {
 
 /* Section Recherche */
 #titre p {
-  padding-top: 8px;
+  font-size: 90%;
+  font-weight: 600;
+  padding-top: 1%;
 }
+
 /* Barre de recherche */
 #search {
   display: flex;
-  flex-direction: row;
   width: 400px;
   height: 50px;
-  margin: 20px 0;
 }
-button {
+.ico-loupe {
+  display: none;
+}
+.ico-map {
   border: none;
   background-color: #f2f2f2;
   border-radius: 15px 0 0 15px;
   padding: 0;
+  width: 66px;
+  font-size: 18px;
 }
 button:hover {
   background-color: #deebff;
   transform: scale(1.02);
   transition: 0.05s;
 }
-form i {
-  width: 50px;
-  padding: 18px;
-  font-size: 18px;
-  /* background-color: #f2f2f2;
-  border-radius: 15px 0 0 15px; */
+.ico-map {
 }
 form input[type="search"] {
-  width: 220px;
+  width: 67%;
   padding: 15px;
-  font-size: 18px;
+  font-size: 102%;
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   border: 1px solid #f2f2f2;
 }
 form input::placeholder {
@@ -131,44 +134,50 @@ form input[type="submit"]:hover {
 }
 
 /* Filtres */
+#sec-search {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 #filtres {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-
   gap: 30px;
-  font-size: 17px;
-  font-weight: 800;
-  margin: 30px 0;
+  margin: 1% 0;
 }
-#filtres a {
+#filtres ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.filtres-button {
+  display: flex;
   align-items: center;
-  width: 110%;
-  padding-right: 20px;
   border: 3px solid #ececec;
   border-radius: 40px;
 }
-
-#filtres i {
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-  color: #0065fc;
-  padding: 15px;
-  margin: -3px;
-  background-color: #deebff;
-  border-radius: 50%;
-  text-align: center;
-}
-#filtres a:hover {
+#filtres-button:hover {
   background-color: #deebff;
   transform: scale(1.02);
   transition: 0.05s;
 }
+.filtres-button i {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 50%;
+  margin: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#filtres p {
+  font-weight: 800;
+  padding: 0 12px;
+}
+
 /* Footer recherche */
 #sec-search footer {
   display: flex;
@@ -186,36 +195,39 @@ form input[type="submit"]:hover {
   border-radius: 50%;
 }
 
+/* /////////////////////////////////////////////////////////////////////// */
 /* Section hebergements */
 #sec-hebergements {
   display: flex;
-  gap: 25px;
+  gap: 3%;
 }
 #hebergements,
 #populaires {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 20px;
   background-color: #ececec;
-  padding: 20px;
+  padding: 30px;
   border-radius: 20px;
 }
 #hebergements {
-  flex: 4;
+  flex: 2;
 }
 #populaires {
-  flex: 1.8;
+  flex: 1;
 }
 
+/* ////////////////////////////////////////////////////////////////////// */
 /* Hebergements listes*/
 #heberg-liste {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 15px;
+  gap: 6% 2%;
 }
 .heberg-carte {
-  flex-basis: 31%;
+  flex-basis: 32%;
   height: 140px;
   background-color: #fff;
   border: 5px solid #ffffff;
@@ -227,6 +239,7 @@ form input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 4px;
   width: 100%;
   height: 100%;
 }
@@ -250,11 +263,11 @@ form input[type="submit"]:hover {
   padding: 0 0 1% 4%;
 }
 .heberg-carte-text h3 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
 }
 .heberg-carte-text p {
-  font-size: 10px;
+  font-size: 12px;
 }
 .etoiles {
   color: #0065fc;
@@ -269,9 +282,10 @@ form input[type="submit"]:hover {
 #hebergements footer a {
   font-size: 12px;
   font-weight: 750;
-  padding-top: 3%;
+  padding-top: 6%;
 }
 
+/* ////////////////////////////////////////////////////////////////////// */
 /*populaire*/
 #populaires header {
   display: flex;
@@ -326,31 +340,43 @@ form input[type="submit"]:hover {
   font-size: 10px;
 }
 
+/* ////////////////////////////////////////////////////////////////// */
 /* /Activites/ */
 #sec-activites {
   width: 100%;
-  height: 370px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #activ-cartes {
-  height: 300px;
+  height: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
   align-content: space-between;
-  padding-top: 20px;
+  padding: 25px 0;
 }
 .activ-carte {
-  width: 206px;
+  /* width: 206px; */
+  width: 23%;
 }
 .activ-carte a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 100%;
   border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 0 15px #1b1b1b21;
+  overflow: hidden;
 }
 .activ-carte a:hover {
   transform: scale(1.05);
   transition: 0.3s;
+}
+.activ-carte-picture {
+  height: 100%;
 }
 .activ-carte-picture img {
   width: 100%;
@@ -358,17 +384,15 @@ form input[type="submit"]:hover {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-.activ-carte-picture {
-  height: 100%;
-}
+
 .activ-carte h3 {
-  width: 206px;
-  height: 40px;
+  /* width: 206px;
+  height: 40px; */
   font-size: 11px;
   font-weight: 800;
   padding: 7%;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 0 15px #1b1b1b21;
+  /* border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 15px #1b1b1b21; */
 }
 .carte1,
 .carte4 {
@@ -376,15 +400,15 @@ form input[type="submit"]:hover {
 }
 
 .carte2 {
-  height: 50%;
+  height: 56%;
 }
 
 .carte3 {
-  height: 30%;
+  height: 37%;
 }
 .carte5,
 .carte6 {
-  height: 40%;
+  height: 46%;
 }
 
 /* Footer page */
@@ -395,7 +419,7 @@ form input[type="submit"]:hover {
   justify-content: flex-start;
 }
 #footer-page section {
-  margin: 4% 14% 4% 2%;
+  margin: 4% 12% 3% 4%;
 }
 #footer-page h4 {
   font-size: 12px;
@@ -404,6 +428,5 @@ form input[type="submit"]:hover {
 }
 #footer-page a {
   font-size: 11px;
-  font-weight: 800px;
   padding: 2% 0;
 }

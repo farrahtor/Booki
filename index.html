@@ -10,7 +10,8 @@
       content="Trouver votre hébergement pour des vacances de rêve"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/tablette.css" />
+    <link rel="stylesheet" href="css/iPhone8.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -50,36 +51,45 @@
 
           <!-- Barre de recherche -->
           <form id="search">
-            <button type="submit">
+            <button type="submit" class="ico-map">
               <i class="fa-solid fa-location-dot"></i>
             </button>
             <input type="search" placeholder="Marseille, France" />
-            <input type="submit" value="Rechercher" />
+            <input type="submit" value="Rechercher" class="button-search" />
+            <button type="submit" class="ico-loupe">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </form>
 
           <!-- Filtres -->
           <div id="filtres">
             <p>Filtres</p>
-            <div>
-              <a href="#" class="button"
-                ><i class="fa-solid fa-money-bill-wave"></i>Économique</a
-              >
-            </div>
-            <div>
-              <a href="#" class="button"
-                ><i class="fa-solid fa-child-reaching"></i>Familial</a
-              >
-            </div>
-            <div>
-              <a href="#" class="button"
-                ><i class="fa-solid fa-heart"></i>Romantique</a
-              >
-            </div>
-            <div>
-              <a href="#" class="button"
-                ><i class="fa-solid fa-dog"></i>Animaux autorisés</a
-              >
-            </div>
+            <ul>
+              <li>
+                <a href="#" class="filtres-button">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <p>Économique</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="filtres-button">
+                  <i class="fa-solid fa-child-reaching"></i>
+                  <p>Familial</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="filtres-button">
+                  <i class="fa-solid fa-heart"></i>
+                  <p>Romantique</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="filtres-button">
+                  <i class="fa-solid fa-dog"></i>
+                  <p>Animaux autorisés</p>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <!-- Footer recherche -->
@@ -92,7 +102,7 @@
         <!-- Section hebergements -->
         <section id="sec-hebergements">
           <!-- Hebergements marseille -->
-          <article id="hebergements">
+          <div id="hebergements">
             <header>
               <h2>Hébergements à Marseille</h2>
             </header>
@@ -101,7 +111,7 @@
                 <a href="#">
                   <div class="heberg-carte-picture">
                     <img
-                      src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                      src="images/hebergements/1-aubregeLaCannebiere.jpg"
                       alt="Cannebière"
                     />
                   </div>
@@ -122,7 +132,7 @@
                 <a href="#">
                   <div class="heberg-carte-picture">
                     <img
-                      src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                      src="images/hebergements/2-hotelDuPort.jpg"
                       alt="Port"
                     />
                   </div>
@@ -143,7 +153,7 @@
                 <a href="#">
                   <div class="heberg-carte-picture">
                     <img
-                      src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                      src="images/hebergements/3-hotelLesMouettes.jpg"
                       alt="Les mouettes"
                     />
                   </div>
@@ -164,7 +174,7 @@
                 <a href="#">
                   <div class="heberg-carte-picture">
                     <img
-                      src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                      src="images/hebergements/4-hotelDeLaMer.jpg"
                       alt="mer"
                     />
                   </div>
@@ -185,7 +195,7 @@
                 <a href="#">
                   <div class="heberg-carte-picture">
                     <img
-                      src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                      src="images/hebergements/5-aubergeLePanier.jpg"
                       alt="Le panier"
                     />
                   </div>
@@ -206,7 +216,7 @@
                 <a href="#">
                   <div class="heberg-carte-picture">
                     <img
-                      src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                      src="images/hebergements/6-hotelAmina.jpg"
                       alt="Amina"
                     />
                   </div>
@@ -227,7 +237,7 @@
             <footer>
               <a href="#">Afficher plus</a>
             </footer>
-          </article>
+          </div>
           <!-- Populaires -->
           <aside id="populaires">
             <header>
@@ -239,7 +249,7 @@
                 <a href="#">
                   <div class="popul-carte-picture">
                     <img
-                      src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                      src="images/hebergements/1-hotelLeSoleil.jpg"
                       alt="Soleil du matin"
                     />
                   </div>
@@ -262,7 +272,7 @@
                 <a href="#">
                   <div class="popul-carte-picture">
                     <img
-                      src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                      src="images/hebergements/2-AuCoeurDeLeau.jpg"
                       alt="Au coeur de l'eau"
                     />
                   </div>
@@ -285,7 +295,7 @@
                 <a href="#">
                   <div class="popul-carte-picture">
                     <img
-                      src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                      src="images/hebergements/3-hotelToutBleu.jpg"
                       alt="bleu et blanc"
                     />
                   </div>
@@ -313,46 +323,46 @@
           <h2>Activités à Marseille</h2>
 
           <div id="activ-cartes">
-            <div class="activ-carte carte1">
+            <article class="activ-carte carte1">
               <a href="#">
                 <div class="activ-carte-picture">
                   <img
-                    src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                    src="images/activites/1-vieuxPort.jpg"
                     alt="Vieux port"
                   />
                 </div>
                 <h3>Vieux port</h3>
               </a>
-            </div>
+            </article>
 
-            <div class="activ-carte carte2">
+            <article class="activ-carte carte2">
               <a href="#">
                 <div class="activ-carte-picture">
                   <img
-                    src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                    src="images/activites/2-fortDePomegues.jpg"
                     alt="Fort de Pomègues"
                   />
                 </div>
                 <h3>Fort de Pomègues</h3>
               </a>
-            </div>
-            <div class="activ-carte carte3">
+            </article>
+            <article class="activ-carte carte3">
               <a href="#">
                 <div class="activ-carte-picture">
                   <img
-                    src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                    src="images/activites/3-ilesDuFrioul.jpg"
                     alt="îles de Frioul"
                   />
                 </div>
                 <h3>Îles de Frioul</h3>
               </a>
-            </div>
+            </article>
 
             <div class="activ-carte carte4">
               <a href="#">
                 <div class="activ-carte-picture">
                   <img
-                    src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                    src="images/activites/4-parcNational.jpg"
                     alt="Parc National des Calanques"
                   />
                 </div>
@@ -363,7 +373,7 @@
               <a href="#">
                 <div class="activ-carte-picture">
                   <img
-                    src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                    src="images/activites/5-notreDame.jpg"
                     alt="Notre-Dame-de-la-Garde"
                   />
                 </div>
@@ -374,7 +384,7 @@
               <a href="#">
                 <div class="activ-carte-picture">
                   <img
-                    src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                    src="images/activites/6-parcLongchamp.jpg"
                     alt="Parc Longchamp"
                   />
                 </div>
