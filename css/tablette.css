@@ -4,6 +4,9 @@
   #container {
     gap: 50px;
   }
+  #main {
+    gap: 0;
+  }
   h2 {
     font-size: 22px;
   }
@@ -18,7 +21,7 @@
     width: 100%;
   }
   #logo {
-    padding-bottom: 6%;
+    padding-bottom: 3%;
   }
   #menu li {
     width: 50%;
@@ -41,6 +44,8 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding-top: 20px;
+    margin-bottom: 60px;
   }
   #titre {
     text-align: center;
@@ -65,9 +70,10 @@
   /* SECTION HEBERGEMENTS */
   #sec-hebergements {
     flex-direction: column-reverse;
+    gap: 20px;
   }
   .popul-carte {
-    height: 130px;
+    height: 160px;
   }
   .popul-carte-picture {
     width: 50%;
@@ -77,9 +83,6 @@
   }
   .popul-carte-text p {
     font-size: 14px;
-  }
-  #hebergements {
-    background-color: #fff;
   }
   #heberg-liste {
     height: 700px;
@@ -113,7 +116,9 @@
   /* ///////////////////////////////////////////////////////////////////////////////////// */
   /* ACTIVITES */
   #sec-activites {
-    height: 688px;
+    height: 700px;
+    padding: 30px;
+    margin-bottom: 30px;
   }
   #activ-cartes {
     flex-flow: row wrap;
@@ -121,10 +126,18 @@
     row-gap: 30px;
   }
   .activ-carte {
-    width: 45%;
+    width: 48%;
     height: 200px;
   }
   .activ-carte h3 {
+    font-size: 16px;
+  }
+  /* /////////////////////////////////////////////////////////////////////////////////// */
+  /* Footer */
+  #footer-page h4 {
+    font-size: 18px;
+  }
+  #footer-page a {
     font-size: 16px;
   }
 }
