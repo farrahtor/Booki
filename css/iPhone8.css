@@ -2,6 +2,10 @@
   #container {
     gap: 0;
   }
+  #main {
+    gap: 20px;
+  }
+
   #header {
     height: 140px;
     margin-bottom: 0;
@@ -18,7 +22,8 @@
     align-items: flex-start;
     width: 92%;
     margin: auto;
-    gap: 20px;
+    gap: 30px;
+    padding-bottom: 20px;
   }
   #search {
     width: 330px;
@@ -64,8 +69,46 @@
   #populaires {
     border-radius: 0;
   }
-  #populaires h2,
-  #hebergements h2 {
-    font-size: 20px;
+  #populaires,
+  #hebergements {
+    padding: 30px 20px;
+  }
+
+  /* #hebergements {
+    padding: 10px 20px;
+  } */
+  #heberg-liste {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1%;
+    height: 1250px;
+  }
+
+  #hebergements footer a {
+    padding-top: 6%;
+  }
+  /* //////////////////////////////////////////////////////////////////////////// */
+  /* Activites */
+  #activ-cartes {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 20px;
+  }
+  .activ-carte {
+    width: 100%;
+    height: 180px;
+  }
+
+  /* /////////////////////////////////////////////////////////////////// */
+  /* Footer */
+  #footer-page {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #footer-page h4 {
+    font-size: 18px;
+  }
+  #footer-page a {
+    font-size: 16px;
   }
 }

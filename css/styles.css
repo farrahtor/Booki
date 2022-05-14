@@ -263,11 +263,11 @@ form input[type="submit"]:hover {
   padding: 0 0 1% 4%;
 }
 .heberg-carte-text h3 {
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 800;
 }
 .heberg-carte-text p {
-  font-size: 12px;
+  font-size: 10px;
 }
 .etoiles {
   color: #0065fc;
@@ -384,15 +384,10 @@ form input[type="submit"]:hover {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-
 .activ-carte h3 {
-  /* width: 206px;
-  height: 40px; */
   font-size: 11px;
   font-weight: 800;
-  padding: 7%;
-  /* border-radius: 0 0 20px 20px;
-  box-shadow: 0 0 15px #1b1b1b21; */
+  padding: 6%;
 }
 .carte1,
 .carte4 {

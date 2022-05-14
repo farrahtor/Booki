@@ -4,6 +4,9 @@
   #container {
     gap: 50px;
   }
+  h2 {
+    font-size: 22px;
+  }
   /* Header */
   #header {
     flex-direction: column;
@@ -62,7 +65,6 @@
   /* SECTION HEBERGEMENTS */
   #sec-hebergements {
     flex-direction: column-reverse;
-    gap: 30px;
   }
   .popul-carte {
     height: 130px;
@@ -70,34 +72,59 @@
   .popul-carte-picture {
     width: 50%;
   }
+  .popul-carte-text h3 {
+    font-size: 16px;
+  }
+  .popul-carte-text p {
+    font-size: 14px;
+  }
   #hebergements {
     background-color: #fff;
   }
   #heberg-liste {
-    height: 550px;
+    height: 700px;
     gap: 4%;
   }
   .heberg-carte {
-    height: 180px;
+    height: 220px;
   }
   .heberg-carte a {
-    gap: 2px;
+    gap: 8px;
   }
   .heberg-carte-picture {
-    height: 65%;
+    height: 66%;
+  }
+  .heberg-carte-text {
+    gap: 2px;
+  }
+  .heberg-carte-text h3 {
+    font-size: 16px;
+  }
+  .heberg-carte-text p {
+    font-size: 14px;
+    padding-top: 2px;
+  }
+  .etoiles i {
+    font-size: 12px;
+  }
+  #hebergements footer a {
+    font-size: 16px;
   }
   /* ///////////////////////////////////////////////////////////////////////////////////// */
   /* ACTIVITES */
   #sec-activites {
-    height: auto;
+    height: 688px;
   }
   #activ-cartes {
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     row-gap: 30px;
   }
   .activ-carte {
     width: 45%;
-    height: 350px;
+    height: 200px;
+  }
+  .activ-carte h3 {
+    font-size: 16px;
   }
 }
