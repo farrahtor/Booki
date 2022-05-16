@@ -105,8 +105,7 @@ button:hover {
   transform: scale(1.02);
   transition: 0.05s;
 }
-.ico-map {
-}
+
 form input[type="search"] {
   width: 67%;
   padding: 15px;
