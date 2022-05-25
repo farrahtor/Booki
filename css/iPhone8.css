@@ -75,18 +75,29 @@
   }
   #populaires,
   #hebergements {
-    padding: 30px 20px;
+    padding: 20px;
   }
-
+  #sec-hebergements {
+    gap: 0x;
+  }
   #hebergements {
     background-color: #fff;
   }
   #heberg-liste {
     flex-direction: column;
     flex-wrap: nowrap;
-    /* align-items: stretch; */
     gap: 1%;
     height: 1400px;
+  }
+  .heberg-carte {
+    width: 100%;
+    flex-grow: 0;
+  }
+  .heberg-carte a {
+    gap: 0;
+  }
+  .heberg-carte-picture {
+    /* height: 50%; */
   }
 
   #hebergements footer a {
@@ -95,7 +106,7 @@
   /* //////////////////////////////////////////////////////////////////////////// */
   /* Activites */
   #sec-activites {
-    height: 1300px;
+    height: 1360px;
     padding: 0 30px;
   }
   #activ-cartes {
@@ -112,8 +123,11 @@
   }
   /* /////////////////////////////////////////////////////////////////// */
   /* Footer */
-  #footer-page {
+  .footer-page {
     flex-direction: column;
     padding: 20px;
+  }
+  .footer-page section {
+    width: 100%;
   }
 }

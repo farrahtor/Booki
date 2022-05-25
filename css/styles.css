@@ -38,10 +38,9 @@ input {
 /* ///////////////////////////////////////////////////////////////////// */
 /* Header */
 #header {
-  width: 93%;
+  width: 992px;
   margin: auto;
   height: 100px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,9 +67,9 @@ input {
 /* ////////////////////////////////////////////////////////////////// */
 /* Main */
 #main {
-  width: 93%;
-  margin: 0 auto 2%;
-
+  max-width: 992px;
+  margin: auto;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -226,7 +225,7 @@ form input[type="submit"]:hover {
   gap: 6% 2%;
 }
 .heberg-carte {
-  flex-basis: 32%;
+  width: 32%;
   height: 140px;
   background-color: #fff;
   border: 5px solid #ffffff;
@@ -407,19 +406,25 @@ form input[type="submit"]:hover {
 /* Footer page */
 #footer-page {
   width: 100%;
+  padding: 0 10px;
   background-color: #ececec;
+}
+.footer-page {
+  max-width: 992px;
+  margin: auto;
   display: flex;
   justify-content: flex-start;
 }
-#footer-page section {
-  margin: 4% 12% 3% 4%;
+.footer-page section {
+  width: 30%;
+  margin: 3% 0% 3% 1%;
 }
-#footer-page h4 {
+.footer-page h4 {
   font-size: 12px;
   font-weight: 800;
   padding-bottom: 6%;
 }
-#footer-page a {
+.footer-page a {
   font-size: 11px;
   padding: 2% 0;
 }
