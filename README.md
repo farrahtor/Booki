@@ -25,3 +25,4 @@ Compétences évaluées
 - Implémenter une interface responsive
 - Respecter les spécifications fonctionnelles et techniques
 
+Démo en ligne => https://farrahtor.github.io/Booki/
