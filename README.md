@@ -1,2 +1,12 @@
 # Booki
- ![220208_Booki_mockup](https://github.com/farrahtor/Booki/assets/20828379/dd6f76bc-bc17-4994-b8f2-543de966291f)
+Projet 2 de la formation Développeur Web OpenClassrooms. 
+L'objectif est d'intégrer la maquette d'un site web en HTML et CSS.
+
+Spécifications techniques
+Le développement doit se faire en HTML et CSS, sans JavaScript ni framework.
+
+La page doit être responsive sur mobile, tablette et desktop (desktop-first).
+
+La page doit passer la validation W3C
+
+La page doit être compatible avec les dernières versions de Chrome et Firefox.
